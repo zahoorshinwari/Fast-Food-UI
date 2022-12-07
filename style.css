@@ -1,0 +1,427 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins' , sans-serif;
+}
+
+/* image for the brand is here */
+#logo-color i img
+{
+    width: 50px;
+}
+
+/* it is for the brand of the navbar  */
+.navbar-brand
+{
+    margin-left: 50px;
+    color: rgb(255, 166, 0);
+    font-weight: bold;
+}
+/* it is the button when the page are comes on the mobile size then the navbar data will be in this menu bar button */
+#menu-color
+{
+    background-color: rgba(255, 166,0);
+}
+/* when cursor comes in the brand then change its color */
+.navbar-brand:hover
+{
+    color: rgba(255, 166,0);
+}
+/* over all navber color can change frome here */
+#navbar-color
+{
+    background-color: black;
+}
+
+/* navbar item margin is here */
+.navbar-nav
+{
+    margin-left: 200px;
+}
+
+/* spacing between  the item of the navbar */
+.nav-item
+{
+    margin-left: 50px;
+    letter-spacing: 3px;
+}
+
+/* it is for the first link in the navbar  */
+#first
+{
+    background-color: rgba(255,166,0);
+    box-shadow: 0 0 5px rgba(255,166,0),
+    0 0 20px rgba(255,166,0),
+    0 0 60px rgba(255,166,0),
+    0 0 150px rgba(255,166,0);
+    color: black;
+     
+}
+
+/* it is for all the link or item in the navbar */
+.nav-link
+{
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s ease;
+    
+}
+
+
+/* when the cursor are come on the navbar item or link */
+.nav-link:hover
+{
+    background-color: rgba(255,166,0);
+    box-shadow: 0 0 5px rgba(255,166,0),
+                 0 0 20px rgba(255,166,0),
+                 0 0 60px rgba(255,166,0),
+                 0 0 150px rgba(255,166,0);
+                 color: black;
+}
+
+
+/* here we can take the content after the navbar in the division*/
+.main-content
+{
+    width: 100%;
+    height: 90vh;
+    background-image: url(./images/background1.jpg);
+    background-size: cover;
+    background-position: 50%;
+
+}
+
+/* here we can design the content division that we can take */
+.content
+{
+ padding-top: 150px;
+ margin-left: 100px;
+ color: beige;  
+}
+/* in the content division we can take inside the h1 */
+.content h1
+{
+    font-size: 60px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* n the content division we can take inside the h2 */
+.content h2
+{
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 3px;
+}
+
+/* in the content division we can take inside the button */
+#btn1 button
+{
+  width: 200px;
+  height: 35px;
+  margin-top: 30px;
+  letter-spacing: 3px;
+  font-weight: bold;
+  background-color: rgba(255, 166,0);
+  border: none;
+  transition: 0.5s ease;
+  cursor: pointer;  
+}
+
+/* when the cursor are comes on the button */
+#btn1 button:hover
+{
+    background-color: rgba(255,166,0);
+    box-shadow: 0 0 5px rgba(255,166,0),
+                 0 0 20px rgba(255,166,0),
+                 0 0 60px rgba(255,166,0),
+                 0 0 150px rgba(255,166,0);
+                 color: black;
+}
+
+
+/* design for the first card */
+.card
+{
+    box-shadow: 0 0 5px black;
+    cursor: pointer;
+    transition: transform 0.9s ease;
+    margin: auto;
+}
+
+/* when the cursor are comes on the card the move upword */
+.best-card .card:hover
+{
+    transform: translateY(-20px);
+}
+
+/* it is text on the card */
+.best-card h1
+{
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    text-shadow: 2px 1px 5px black;
+}
+
+/* some writing on the card in the form of paragraph */
+.best-card p
+{
+    font-weight: bold;
+    text-shadow: 2px 1px 5px black;
+    text-align: center;
+    color: white;
+}
+
+/* effect on the card no 3 */
+.card-image3
+{
+    width: 100%;
+    height: 30.5vh;
+}
+
+/* it is h1  */
+.card-content h1
+{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+/* it is h3 */
+
+.card-content h3
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+/* it is h5 */
+.card-content h5
+{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+/* it is paragraph in the container */
+.card-content p
+{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+
+
+/* it is for the banner background image */
+.banner
+{
+    width: 100%;
+    height: 70vh;
+    background-image: linear-gradient(rgba(0,0,0,0.9) ,rgba(0,0,0,0.9)) , url(./images/banner1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 70%;
+}
+
+
+/* it is for the heading 1 in the banner  */
+.banner h1{
+    font-size: 70px;
+    color: white;
+    font-weight: bold;
+    padding-top: 15px;
+    margin-left: 5px;
+    text-shadow: 2px 1px 5px black;
+}
+
+
+/* it is for the changing of some item name in the banner infinite times */
+.change-content:after{
+    content: ' ';
+    animation: changetext 5s infinite linear;
+    color: rgba(255,166,0);
+
+}
+
+/* it is for the changing item in the banner */
+@keyframes changetext{
+    40%{content: "Chicken Burger";}
+    0%{content: "Fries";}
+    80%{content: "Chesse Burger";}
+    20%{content: " Sandwich";}
+    60%{content: "Beef Burger";}
+    100%{content: "Pizza";}
+}
+
+/* it is for the heading 2 which are placed on the banner */
+.banner h2{
+    font-size: 50px;
+    color: rgba(255,166,0);
+    font-weight: bold;
+    padding-top: 15px;
+    margin-left: 5px;
+}
+
+/* it is for the button on the banner */
+#btn2 button{
+    width: 200px;
+    height: 35px;
+    margin-left: 5px;
+    margin-top: 20px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    background-color: rgba(255,166,0);
+    border: 3px solid white;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+/* it is for the button when cursor are comes on it */
+#btn2 button:hover{
+    background-color: rgba(255,166,0);
+    box-shadow: 0 0 5px rgba(255,166,0),
+                 0 0 20px rgba(255,166,0),
+                 0 0 60px rgba(255,166,0),
+                 0 0 150px rgba(255,166,0);
+
+}
+
+
+
+/* it is for the card margin that we can added */
+.new-card
+{
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+/* it is for the heading that we are inserting on the cards */
+.new-card h1
+{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+/* it is button 3 that we can align it in center of the card */
+#btn3
+{
+    text-align: center;
+}
+/* it is for the button 3 that we inserting in the cards */
+#btn3 button
+{
+    width: 150px;
+    height: 30px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(255, 166, 0);
+    transition: 0.7s ease;
+    cursor: pointer;
+}
+
+/* it is used for the cursor are comes on the button the background and color change */
+#btn3 button:hover
+{
+    background-color: black;
+    color: rgb(255, 166, 0);
+}
+
+
+/* it is for button below the cards and button in center and marging top */
+#btn4
+{
+    text-align: center;
+    margin-top: 80px;
+}
+
+/* it is for the button below the cards and its styling */
+#btn4 button
+{
+    
+    text-align: center;
+    width: 200px;
+    height: 45px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border: none;
+    background-color: rgb(255, 166, 0);
+    transition: 0.9s ease-out;
+}
+/* when cursor are comes on the buttons */
+#btn4 button:hover
+{
+    transform: translateY(-20px);
+}
+
+/* it is for the banner no 2 and we take its background mage */
+.banner2
+{
+    width: 100%;
+    height: 70vh;
+    background-image: url(./images/banner2.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: cover;
+    margin-top: 50px;
+}
+
+
+/* it is for the heading 1 in the banner 2  */
+.banner2 h1
+{
+    font-weight: bold;
+    font-size: 60px;
+    padding-top: 110px;
+    margin-left: 30px;
+    color: white;
+}
+
+/* it is for the heading 2 in tha banner no 2 */
+.banner2 h2
+{
+    font-weight: bold;
+    color: black;
+    background-color: rgb(255, 166, 0);
+    font-size: 60px;
+    display: inline-block;
+    margin-left: 30px;
+}
+
+
+
+/* it is for the footer background padding size and margin */
+#footer
+{
+    background-color: black;
+    padding: 50px 0;
+    font-size: 20px;
+    margin-top: 75px;
+
+}
+
+#footer .footer-links a
+{
+    color: white;
+    font-weight: bold;
+    padding-left: 30px;
+
+}
+
+#footer .footer-links a:first-child
+{
+    padding-left: 0;
+}
+
+#footer .footer-links a:hover
+{
+    color: rgb(255, 166, 0);
+}
+.copyright
+{
+    color: white;
+}
+
+
